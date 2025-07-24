@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import HeroBanner from "@/components/HeroBanner";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-home.jpg";
+import heroImage from "/pics/blog.jpg";
 import blog1Image from "@/assets/blog-1.jpg";
 import blog2Image from "@/assets/blog-2.jpg";
 import blog3Image from "@/assets/blog-3.jpg";

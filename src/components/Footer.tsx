@@ -11,7 +11,7 @@ const Footer = () => {
             <img
               src="/lovable-uploads/2f619d33-dd96-4fb0-8e5d-b63ab8361c71.png"
               alt="Comfort Crest Adult Family Home"
-              className="h-12 w-auto mb-4 brightness-0 invert"
+              className="h-12 w-auto mb-4 "
             />
             <p className="text-primary-foreground/80 leading-relaxed">
               Providing compassionate, personalized care in a beautiful home environment. 
@@ -28,8 +28,8 @@ const Footer = () => {
                 <Phone className="h-4 w-4 mr-3 text-secondary" />
                 <div>
                   <p>(201) 920-7621</p>
-                  <p>(360) 990-2377</p>
-                  <p>(360) 999-6009</p>
+                  <p>+1 (360) 990-2377</p>
+                  <p>+1 (360) 999-6009</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -80,7 +80,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/60">
-            © 2024 Comfort Crest Adult Family Home. All rights reserved.
+            © 2025 Comfort Crest Adult Family Home. All rights reserved.
           </p>
         </div>
       </div>

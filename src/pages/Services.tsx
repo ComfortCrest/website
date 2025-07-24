@@ -13,8 +13,8 @@ import {
   Clock, 
   Brain 
 } from "lucide-react";
-import heroImage from "@/assets/hero-home.jpg";
-import personalCareImage from "@/assets/personal-care.jpg";
+import heroImage from "/pics/elderly2.jpg";
+import personalCareImage from "/pics/elderly4.jpg";
 
 const Services = () => {
   const services = [
@@ -155,7 +155,7 @@ const Services = () => {
                 Our approach is holistic, considering not just physical health but 
                 emotional, social, and spiritual well-being as well.
               </p>
-              <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+              <Button asChild variant="outline" className="border-white text-[#f6d170] hover:bg-white hover:text-primary">
                 <Link to="/about">Learn More About Us</Link>
               </Button>
             </div>

@@ -3,9 +3,9 @@ import HeroBanner from "@/components/HeroBanner";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-home.jpg";
-import lakeImage from "@/assets/lake-access.jpg";
-import livingRoomImage from "@/assets/living-room.jpg";
+import heroImage from "/pics/home2.jpg";
+import lakeImage from "/pics/hickslake.jpg";
+import livingRoomImage from "/pics/elderly3.jpg";
 
 const About = () => {
   return (
@@ -130,7 +130,7 @@ const About = () => {
               professional care in a beautiful home environment that promotes dignity, 
               independence, and well-being.
             </p>
-            <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild variant="outline" className="border-white text-[#f6d170] hover:bg-white hover:text-primary">
               <Link to="/contact">Join Our Family</Link>
             </Button>
           </div>

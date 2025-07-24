@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import heroImage from "@/assets/hero-home.jpg";
+import heroImage from "/pics/contact1.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -67,8 +67,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Phone Numbers</h3>
                     <p className="text-muted-foreground">Main: (201) 920-7621</p>
-                    <p className="text-muted-foreground">Alt: (360) 990-2377</p>
-                    <p className="text-muted-foreground">House: (360) 999-6009</p>
+                    <p className="text-muted-foreground">Alt: +1 (360) 990-2377</p>
+                    <p className="text-muted-foreground">House: +1 (360) 999-6009</p>
                   </div>
                 </div>
 
@@ -242,11 +242,11 @@ const Contact = () => {
             Contact us today to learn more about our services and availability.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center fade-in-up delay-400">
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-3">
+            <Button variant="outline" className="border-white text-[#f6d170] hover:bg-white hover:text-primary font-semibold px-8 py-3">
               <Phone className="mr-2 h-4 w-4" />
               Call (201) 920-7621
             </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-3">
+            <Button variant="outline" className="border-white text-[#f6d170] hover:bg-white hover:text-primary font-semibold px-8 py-3">
               <Mail className="mr-2 h-4 w-4" />
               Send Email
             </Button>

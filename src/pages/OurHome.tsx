@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-home.jpg";
+import heroImage from "/pics/home.jpg";
 import livingRoomImage from "@/assets/living-room.jpg";
 import lakeImage from "@/assets/lake-access.jpg";
 import homeExteriorImage from "@/assets/home-exterior.jpg";
@@ -263,7 +263,7 @@ const OurHome = () => {
             We invite you to visit our beautiful home and see firsthand the 
             comfortable, caring environment we've created for our residents.
           </p>
-          <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-3 fade-in-up delay-400">
+          <Button asChild variant="outline" className="border-white text-[#f6d170] hover:bg-white hover:text-primary font-semibold px-8 py-3 fade-in-up delay-400">
             <Link to="/contact">Schedule Your Visit Today</Link>
           </Button>
         </div>

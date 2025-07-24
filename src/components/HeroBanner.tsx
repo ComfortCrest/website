@@ -32,7 +32,8 @@ const HeroBanner = ({
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 hero-overlay"></div>
+      {/* <div className="absolute inset-0 hero-overlay"></div> */}
+      
       
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
