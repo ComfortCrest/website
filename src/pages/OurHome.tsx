@@ -2,12 +2,24 @@ import Layout from "@/components/Layout";
 import HeroBanner from "@/components/HeroBanner";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-home.jpg";
 import livingRoomImage from "@/assets/living-room.jpg";
 import lakeImage from "@/assets/lake-access.jpg";
+import homeExteriorImage from "@/assets/home-exterior.jpg";
+import homeDiningImage from "@/assets/home-dining.jpg";
+import homeBedroomImage from "@/assets/home-bedroom.jpg";
 
 const OurHome = () => {
+  const homeImages = [
+    { src: livingRoomImage, alt: "Comfortable living room", title: "Living Area" },
+    { src: lakeImage, alt: "Beautiful lake access", title: "Lake Access" },
+    { src: homeExteriorImage, alt: "Home exterior", title: "Exterior View" },
+    { src: homeDiningImage, alt: "Dining room", title: "Dining Room" },
+    { src: homeBedroomImage, alt: "Private bedroom", title: "Private Rooms" },
+  ];
+
   return (
     <Layout>
       <HeroBanner
@@ -20,8 +32,48 @@ const OurHome = () => {
         </Button>
       </HeroBanner>
 
-      {/* Home Overview */}
+      {/* Home Gallery Carousel */}
       <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary font-poppins fade-in-up">
+              Tour Our Beautiful Home
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto fade-in-up delay-200">
+              Take a visual journey through our comfortable, welcoming spaces designed for quality living.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto fade-in-up delay-400">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {homeImages.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-96 md:h-[500px] object-cover rounded-lg shadow-elegant"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent rounded-b-lg">
+                        <div className="p-6">
+                          <h3 className="text-xl font-semibold text-white mb-2">{image.title}</h3>
+                          <p className="text-white/90">{image.alt}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+          </div>
+        </div>
+      </section>
+
+      {/* Home Overview */}
+      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="fade-in-left">
@@ -55,7 +107,7 @@ const OurHome = () => {
       </section>
 
       {/* Home Features */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary font-poppins fade-in-up">
