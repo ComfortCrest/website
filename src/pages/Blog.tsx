@@ -6,6 +6,11 @@ import heroImage from "/pics/blog.jpg";
 import blog1Image from "@/assets/blog-1.jpg";
 import blog2Image from "@/assets/blog-2.jpg";
 import blog3Image from "@/assets/blog-3.jpg";
+import blog4Image from "@/assets/blog-4.png";
+import blog5Image from "@/assets/blog-5.png";
+import blog6Image from "@/assets/blog-6.png";
+import blog7Image from "@/assets/blog-7.png";
+import blog8Image from "@/assets/blog-8.png";
 
 const blogPosts = [
   {
@@ -13,21 +18,56 @@ const blogPosts = [
     title: "Understanding Adult Family Home Care",
     excerpt: "Learn about the personalized care and family-like atmosphere that makes adult family homes special.",
     image: blog1Image,
-    date: "March 15, 2024"
+    date: "March 15, 2025"
   },
   {
     id: 2,
     title: "Creating a Home Away from Home",
     excerpt: "Discover how we create a warm, welcoming environment that feels like home for all our residents.",
     image: blog2Image,
-    date: "March 10, 2024"
+    date: "March 10, 2025"
   },
   {
     id: 3,
-    title: "The Importance of Medication Management",
+    title: "Specialized Care for Dementia & Alzheimer's",
     excerpt: "Professional medication management ensures safety and peace of mind for residents and families.",
     image: blog3Image,
-    date: "March 5, 2024"
+    date: "June 5, 2025"
+  },
+  {
+    id: 4,
+    title: "Specialized care for dementia and Alzheimer's",
+    excerpt: "It focuses on maximizing quality of life for individuals and families affected by these conditions. This involves a multifaceted approach that includes managing symptoms, supporting daily living activities, and addressing the emotional and social well-being of both the person with dementia and their caregivers.",
+    image: blog4Image,
+    date: "July 1, 2025"
+  },
+  {
+    id: 5,
+    title: "Promoting Mental Wellness in Older Adults",
+    excerpt: "Mental wellness in older adults encompasses life satisfaction, optimism, self-esteem, a sense of control and purpose, and strong social connections. Despite common misconceptions, many older adults experience improved well-being and life satisfaction in later life, sometimes referred to as the paradox of aging.",
+    image: blog5Image,
+    date: "July 5, 2025"
+  },
+  {
+    id: 6,
+    title: "Transitioning a Loved One to an Adult Family Home",
+    excerpt: "Moving a loved one into an adult family home is a significant life transition—for both the individual and their family. At Comfort Crest, we understand the emotional and practical challenges that come with this decision and are here to support you every step of the way.",
+    image: blog6Image,
+    date: "July 8, 2025"
+  },
+  {
+    id: 7,
+    title: "Staying Active at Any Age: Light Exercises for Seniors",
+    excerpt: "Physical activity plays a vital role in healthy aging. At Comfort Crest, we encourage seniors to stay active through safe, light exercises that improve physical health, mental well-being, and overall quality of life.",
+    image: blog7Image,
+    date: "July 15, 2025"
+  },
+  {
+    id: 8,
+    title: "What’s on the Menu: Healthy Meals for Seniors",
+    excerpt: " Nutrition plays a vital role in maintaining strength, energy, and overall health—especially for older adults. At Comfort Crest, we prioritize wholesome, well-balanced meals that support both physical health and emotional comfort.",
+    image: blog8Image,
+    date: "August 1, 2025"
   }
 ];
 

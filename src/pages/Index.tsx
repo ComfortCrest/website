@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Heart, Home, Users, Shield } from "lucide-react";
-import heroImage from "@/assets/hero-home.jpg";
-import livingRoomImage from "@/assets/living-room.jpg";
+import heroImage from "/pics/outside5.jpg";
+import livingRoomImage from "/pics/outside2.jpg";
 import personalCareImage from "/pics/elderly1.jpg";
 
 const Index = () => {
@@ -50,11 +50,13 @@ const Index = () => {
               </Button>
             </div>
             <div className="fade-in-right">
-              <img
-                src={livingRoomImage}
-                alt="Comfortable living space"
-                className="rounded-lg shadow-elegant w-full"
-              />
+              
+              <video
+                  controls
+                  className="rounded-lg shadow-elegant w-full">
+                  <source src="/pics/video1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>

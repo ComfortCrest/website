@@ -4,21 +4,61 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Link } from "react-router-dom";
-import heroImage from "/pics/home.jpg";
-import livingRoomImage from "@/assets/living-room.jpg";
-import lakeImage from "@/assets/lake-access.jpg";
-import homeExteriorImage from "@/assets/home-exterior.jpg";
-import homeDiningImage from "@/assets/home-dining.jpg";
-import homeBedroomImage from "@/assets/home-bedroom.jpg";
+import heroImage from "/pics/outside1.jpg";
+import lakeImage from "/pics/lake.jpg";
 
 const OurHome = () => {
   const homeImages = [
-    { src: livingRoomImage, alt: "Comfortable living room", title: "Living Area" },
-    { src: lakeImage, alt: "Beautiful lake access", title: "Lake Access" },
-    { src: homeExteriorImage, alt: "Home exterior", title: "Exterior View" },
-    { src: homeDiningImage, alt: "Dining room", title: "Dining Room" },
-    { src: homeBedroomImage, alt: "Private bedroom", title: "Private Rooms" },
+    { src: "/pics/living2.jpg", alt: "Comfortable living room", title: "Living Area" },
+    { src: "/pics/living4.jpg", alt: "View from Living Area", title: "Outside View" },
+    { src: "/pics/living5.jpg", alt: "Home interior", title: "Living Area" },
+    { src: "/pics/living6.jpg", alt: "Home Interior", title: "Comfortable Couches" },
+    { src: "/pics/living7.jpg", alt: "Comfortable living room", title: "Private Rooms" },
+    { src: "/pics/living9.jpg", alt: "The Single-Seat Sanctuary", title: "One-seat couches" }
   ];
+  const bedroomImages = [
+    { src: "/pics/bedroom1.jpg", alt: "Soft bed with warm lighting", title: "Cozy Bedroom" },
+    { src: "/pics/bedroom2.jpg", alt: "View from Bedroom Area", title: "Modern Bedroom Interior" },
+    { src: "/pics/bedroom3.jpg", alt: "Sleek bed in bright room.", title: "Comfortable Bedroom" },
+    { src: "/pics/bedroom4.jpg", alt: "Bed and vintage decor.", title: "Rustic Bedroom" },
+    { src: "/pics/bedroom6.jpg", alt: "Comfortable bedroom", title: "Clean bed setup" },
+    { src: "/pics/bedroom5.jpg", alt: "A cozy room with a study desk by the window, warm lighting, and a comfortable chair.", title: "Bright Study Room Interior" },
+    {src: "/pics/bedroom7.jpg", alt: "Cozy bedroom.", title: "Bedroom Interior" },    
+  ];
+  const bathroomImages = [
+    { src: "/pics/bathroom1.jpg", alt: "Sleek sink and glass shower with clean lines.", title: "Modern Bathroom" },
+    { src: "/pics/bathroom2.jpg", alt: "Simple bathroom with white tiles and floating vanity.", title: "Minimalist Bathroom Design" },
+    { src: "/pics/bathroom3.jpg", alt: "Soft lighting Bathroom", title: "Luxury Spa Bathroom" },
+    { src: "/pics/bathroom4.jpg", alt: "Wood accents and stone sink with natural tones.", title: "Rustic Bathroom Interior" },
+    { src: "/pics/bathroom5.jpg", alt: " All-white bathroom with mirror and bright light.", title: "Bright White Bathroom" },
+    { src: "/pics/bathroom6.jpg", alt: "Bathroom with large window and natural light.", title: "Bright Bathroom" },
+    {src: "/pics/bathroom7.jpg", alt: "Wall mirror above a sink with built-in drawers.", title: "Bathroom Vanity Setup" },
+       
+  ];
+  const outsideImages = [
+    { src: "/pics/outside1.jpg", alt: "Green lawn with plants and flowers.", title: "Garden Area" },
+    { src: "/pics/outside2.jpg", alt: "Front Patio", title: "Entrance" },
+    { src: "/pics/outside3.jpg", alt: "Designated Outdoor Parking", title: "Parking Area" },
+    { src: "/pics/outside4.jpg", alt: "Patio chairs and table", title: "Outdoor Seating" },
+    { src: "/pics/outside6.jpg", alt: "Spacious backyard with grass and trees.", title: "Backyard View" },
+    { src: "/pics/outside7.jpg", alt: "Aerial shot showing full layout of house and garden..", title: "Aerial View" },
+    {src: "/pics/outside9.jpg", alt: "", title: "Outside View" },
+    {src: "/pics/lake.jpg", alt: "High-angle view of homes, roads, and with Lake view", title: "Neighborhood Aerial Shot" },    
+  ];
+  const kitchenImages = [
+    { src: "/pics/kitchen2.jpg", alt: "Spacious kitchen with island, wooden cabinets with stainless steel appliances..", title: "Open Kitchen Design" },
+    { src: "/pics/kitchen1.jpg", alt: "Sunlit kitchen with white counters and large window.", title: "Bright Kitchen" },
+    { src: "/pics/kitchen7.jpg", alt: " ", title: "Sleek Kitchen Design." },
+    { src: "/pics/kitchen3.jpg", alt: "Kitchen with built-in oven and sleek cabinetry.", title: "Kitchen with Built-In Oven" },
+    { src: "/pics/kitchen4.jpg", alt: "Dining setup between kitchen and living room.", title: "Dining Area" },
+    {src: "/pics/kitchen6.jpg", alt: "Table with chairs set near door with outside view", title: "Cozy Dining Corner" },    
+  ];
+  const videoItems = [
+  {
+    src: "/pics/video2.mp4",poster: "/pics/kitchen4.jpg",title: "Facility Tour – Lounge Area",description: "A quick look into our cozy lounge and community space."},
+    {src: "/pics/video3.mp4",poster: "/pics/outside3.jpg",title: "Walkthrough",description: "Garden Area."}
+];
+
 
   return (
     <Layout>
@@ -43,7 +83,8 @@ const OurHome = () => {
               Take a visual journey through our comfortable, welcoming spaces designed for quality living.
             </p>
           </div>
-
+          {/* Living Area */}
+          <p className="text-xl  max-w-3xl mx-auto fade-in-up delay-200">SWIPE THROUGH THE <b>LIVING AREA</b> PICTURES</p>
           <div className="max-w-4xl mx-auto fade-in-up delay-400">
             <Carousel className="w-full">
               <CarouselContent>
@@ -69,6 +110,146 @@ const OurHome = () => {
               <CarouselNext className="right-4" />
             </Carousel>
           </div>
+          {/* Bedroom */}
+          <p className="text-xl  max-w-3xl mx-auto fade-in-up delay-200">SWIPE THROUGH THE <b>BEDROOM</b> PICTURES</p>
+          <div className="max-w-4xl mx-auto fade-in-up delay-400">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {bedroomImages.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-96 md:h-[500px] object-cover rounded-lg shadow-elegant"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent rounded-b-lg">
+                        <div className="p-6">
+                          <h3 className="text-xl font-semibold text-white mb-2">{image.title}</h3>
+                          <p className="text-white/90">{image.alt}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+          </div>
+          {/* Bathroom */}
+          <p className="text-xl  max-w-3xl mx-auto fade-in-up delay-200">SWIPE THROUGH THE <b>BATHROOM</b> PICTURES</p>
+          <div className="max-w-4xl mx-auto fade-in-up delay-400">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {bathroomImages.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-96 md:h-[500px] object-cover rounded-lg shadow-elegant"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent rounded-b-lg">
+                        <div className="p-6">
+                          <h3 className="text-xl font-semibold text-white mb-2">{image.title}</h3>
+                          <p className="text-white/90">{image.alt}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+          </div>
+          {/* Kitchen */}
+          <p className="text-xl  max-w-3xl mx-auto fade-in-up delay-200">SWIPE THROUGH THE <b>KITCHEN</b> & <b>DINING AREA</b> PICTURES</p>
+          <div className="max-w-4xl mx-auto fade-in-up delay-400">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {kitchenImages.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-96 md:h-[500px] object-cover rounded-lg shadow-elegant"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent rounded-b-lg">
+                        <div className="p-6">
+                          <h3 className="text-xl font-semibold text-white mb-2">{image.title}</h3>
+                          <p className="text-white/90">{image.alt}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+          </div>
+          {/* Outside */}
+          <p className="text-xl  max-w-3xl mx-auto fade-in-up delay-200">SWIPE THROUGH THE <b>OUTSIDE GARDEN</b> PICTURES</p>
+          <div className="max-w-4xl mx-auto fade-in-up delay-400">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {outsideImages.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-96 md:h-[500px] object-cover rounded-lg shadow-elegant"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent rounded-b-lg">
+                        <div className="p-6">
+                          <h3 className="text-xl font-semibold text-white mb-2">{image.title}</h3>
+                          <p className="text-white/90">{image.alt}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+          </div>
+          {/*Videos */}
+          <p className="text-xl  max-w-3xl mx-auto fade-in-up delay-200">SWIPE THROUGH THE <b>VIDEOS</b></p>
+          <div className="max-w-4xl mx-auto fade-in-up delay-400">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {videoItems.map((video, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative">
+                      <video
+                        src={video.src}
+                        poster={video.poster}
+                        controls
+                        className="w-full h-96 md:h-[500px] object-cover rounded-lg shadow-elegant"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent rounded-b-lg">
+                        <div className="p-6">
+                          <h3 className="text-xl font-semibold text-white mb-2">{video.title}</h3>
+                          <p className="text-white/90">{video.description}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+          </div>
+
+
+        
+
         </div>
       </section>
 
@@ -95,13 +276,7 @@ const OurHome = () => {
                 <Link to="/services">Learn About Our Care</Link>
               </Button>
             </div>
-            <div className="fade-in-right">
-              <img
-                src={livingRoomImage}
-                alt="Comfortable living room"
-                className="rounded-lg shadow-elegant w-full"
-              />
-            </div>
+            
           </div>
         </div>
       </section>

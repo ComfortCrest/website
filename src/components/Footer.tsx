@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <img
-              src="/lovable-uploads/2f619d33-dd96-4fb0-8e5d-b63ab8361c71.png"
+              src="/pics/logo.png"
               alt="Comfort Crest Adult Family Home"
               className="h-12 w-auto mb-4 "
             />

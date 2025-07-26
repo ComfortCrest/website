@@ -5,39 +5,45 @@ import { ArrowLeft } from "lucide-react";
 import blog1Image from "@/assets/blog-1.jpg";
 import blog2Image from "@/assets/blog-2.jpg";
 import blog3Image from "@/assets/blog-3.jpg";
+import blog4Image from "@/assets/blog-4.png";
+import blog5Image from "@/assets/blog-5.png";
+import blog6Image from "@/assets/blog-6.png";
+import blog7Image from "@/assets/blog-7.png";
+import blog8Image from "@/assets/blog-8.png";
 
 const blogPosts = {
   "1": {
-    title: "Understanding Adult Family Home Care",
-    image: blog1Image,
-    date: "March 15, 2024",
-    content: `
-      Adult family home care represents a unique approach to senior living that combines professional care with the warmth and comfort of a home environment. Unlike larger institutional facilities, adult family homes provide personalized care in a residential setting that feels like a true home.
+  title: "Understanding Adult Family Home Care",
+  image: blog1Image,
+  date: "March 15, 2025",
+  content: `
+    Adult family home care represents a unique approach to senior living that combines professional care with the warmth and comfort of a home environment. Unlike larger institutional facilities, adult family homes provide personalized care in a residential setting that feels like a true home.
 
-      At Comfort Crest, we believe that quality care starts with understanding each resident as an individual. Our small, intimate setting allows us to develop deep relationships with each person in our care, understanding their preferences, needs, and personal history.
+    At Comfort Crest, we believe that quality care starts with understanding each resident as an individual. Our small, intimate setting allows us to develop deep relationships with each person in our care, understanding their preferences, needs, and personal history.
 
-      ## What Makes Adult Family Home Care Special?
+    **What Makes Adult Family Home Care Special?**
 
-      The family-style environment creates opportunities for meaningful connections and personalized attention that simply isn't possible in larger facilities. Residents become part of our extended family, participating in daily life activities and maintaining their independence while receiving the support they need.
+    The family-style environment creates opportunities for meaningful connections and personalized attention that simply isn't possible in larger facilities. Residents become part of our extended family, participating in daily life activities and maintaining their independence while receiving the support they need.
 
-      Our approach focuses on:
-      - Maintaining dignity and independence
-      - Providing personalized care plans
-      - Creating a true home atmosphere
-      - Building lasting relationships
-      - Supporting family involvement
+    Our approach focuses on:
+    - Maintaining dignity and independence
+    - Providing personalized care plans
+    - Creating a true home atmosphere
+    - Building lasting relationships
+    - Supporting family involvement
 
-      ## The Difference You'll Feel
+    **The Difference You'll Feel**
 
-      When you visit Comfort Crest, you'll immediately notice the difference. The sound of conversation and laughter, the smell of home-cooked meals, and the sight of residents relaxing in comfortable living spaces all contribute to an environment that promotes well-being and happiness.
+    When you visit Comfort Crest, you'll immediately notice the difference. The sound of conversation and laughter, the smell of home-cooked meals, and the sight of residents relaxing in comfortable living spaces all contribute to an environment that promotes well-being and happiness.
 
-      We're proud to offer this unique style of care that honors the individual while providing the professional support needed for safety and health.
-    `
-  },
+    We're proud to offer this unique style of care that honors the individual while providing the professional support needed for safety and health.
+  `
+},
+
   "2": {
     title: "Creating a Home Away from Home",
     image: blog2Image,
-    date: "March 10, 2024",
+    date: "March 10, 2025",
     content: `
       Creating a home away from home is at the heart of everything we do at Comfort Crest Adult Family Home. We understand that the transition to assisted living can be challenging, which is why we've dedicated ourselves to creating an environment that truly feels like home.
 
@@ -65,7 +71,7 @@ const blogPosts = {
   "3": {
     title: "The Importance of Medication Management",
     image: blog3Image,
-    date: "March 5, 2024",
+    date: "June 5, 2025",
     content: `
       Proper medication management is one of the most critical aspects of care in an adult family home setting. At Comfort Crest, we understand that managing multiple medications can be complex and potentially dangerous if not handled with the utmost care and attention.
 
@@ -99,7 +105,196 @@ const blogPosts = {
 
       Professional medication management is just one of the many ways we demonstrate our commitment to the health, safety, and well-being of every resident at Comfort Crest.
     `
-  }
+  },
+  "4": {
+  title: "Specialized Care for Dementia & Alzheimer's",
+  image: blog4Image,
+  date: "June 1, 2025",
+  content: `
+    Caring for a loved one with dementia or Alzheimer’s is both a deeply emotional and demanding journey. At Comfort Crest, we understand the unique challenges families face and offer a specialized, compassionate approach tailored to individuals living with memory-related conditions.
+
+    **Understanding Memory Care Needs**
+
+    Dementia and Alzheimer’s affect more than just memory — they influence behavior, communication, and the ability to perform daily tasks. As the condition progresses, professional support becomes essential to ensure safety, comfort, and emotional well-being.
+
+    At Comfort Crest, we provide a structured and secure environment designed to reduce confusion and promote a sense of calm.
+
+    **What Makes Our Care Unique**
+
+    We go beyond basic assistance to offer a holistic memory care experience that supports the mind, body, and spirit:
+
+    - Trained caregivers with expertise in dementia-specific care  
+    - Consistent routines to reduce anxiety and disorientation  
+    - Memory-stimulating activities like music therapy, puzzles, and storytelling  
+    - Nutritious meals catered to individual preferences and health needs  
+    - Safe living spaces designed to minimize falls and confusion  
+
+    **Supporting Families Along the Way**
+
+    We know that memory loss affects the entire family. Our care team provides emotional support, regular updates, and guidance to help families stay connected and informed. We encourage visits, conversations, and participation in our community whenever possible.
+
+    **The Comfort Crest Difference**
+
+    Our mission is to preserve the dignity and individuality of every resident. We approach dementia care with patience, respect, and heartfelt connection — creating a safe space where residents feel valued and families find peace of mind.
+
+    **You're Not Alone**
+
+    If your loved one has been diagnosed with dementia or Alzheimer’s, know that you don’t have to walk this path alone. Contact us today to learn more about our specialized care programs and how Comfort Crest can provide the compassionate support your family deserves.
+  `
+},
+"5": {
+  title: "Promoting Mental Wellness in Older Adults",
+  image: blog5Image,
+  date: "July 5, 2025",
+  content: `
+    Mental wellness is just as important as physical health—especially in our golden years. At Comfort Crest, we place great emphasis on nurturing not only the bodies but also the minds of our residents.
+
+    **Why Mental Wellness Matters**
+
+    As people age, they may face increased risks of loneliness, depression, or cognitive decline. Staying mentally healthy can improve quality of life, support independence, and even contribute to physical well-being.
+
+    **Our Approach to Mental Wellness**
+
+    At Comfort Crest, we foster mental wellness through a mix of daily routines, personalized attention, and enriching activities, including:
+
+    - Social interaction through group meals and games  
+    - Memory games and puzzles to stimulate the brain  
+    - Light physical exercise to boost mood and focus  
+    - Music, art, and storytelling for creative expression  
+    - Access to nature and quiet time for relaxation  
+
+    **Creating a Positive Environment**
+
+    We believe a supportive and joyful environment is key to mental health. Our caregivers are trained to provide emotional support, engage residents in meaningful conversations, and notice changes in mood or behavior early.
+
+    **Supporting Family Connections**
+
+    Staying connected with loved ones is vital for emotional stability. We encourage regular visits, phone calls, video chats, and family participation in home events.
+
+    **A Home That Cares for the Whole Person**
+
+    At Comfort Crest, promoting mental wellness isn’t an add-on—it’s part of our everyday care. By focusing on the emotional and psychological needs of each resident, we create a home that feels safe, stimulating, and full of life.
+
+    Contact us to learn more about how we care for the whole person—mind, body, and spirit.
+  `
+},
+"6": {
+  title: "Transitioning a Loved One to an Adult Family Home",
+  image: blog6Image,
+  date: "July 8, 2025",
+  content: `
+    Moving a loved one into an adult family home is a significant life transition—for both the individual and their family. At Comfort Crest, we understand the emotional and practical challenges that come with this decision and are here to support you every step of the way.
+
+    **Understanding the Need for the Move**
+
+    Recognizing when it’s time for extra care can be difficult. Common signs include difficulty managing daily tasks, frequent falls, medication mismanagement, or increasing isolation. Adult family homes offer a safe and supportive environment while preserving the resident’s dignity and comfort.
+
+    **How to Prepare for the Transition**
+
+    Planning ahead and including your loved one in the decision can help ease anxiety. Steps include:
+
+    - Touring potential homes together  
+    - Talking openly about care needs and preferences  
+    - Downsizing belongings while keeping sentimental items  
+    - Scheduling regular visits during the adjustment period  
+
+    **Emotional Support Matters**
+
+    This change often brings up feelings of guilt, fear, or grief. Reassure your loved one that this move is about enhancing their safety, health, and happiness—not about giving up their independence.
+
+    At Comfort Crest, we provide a warm, homelike setting that promotes confidence and connection from day one.
+
+    **A Smooth Welcome at Comfort Crest**
+
+    Our welcoming team helps new residents settle in comfortably. From personalized room setups to introductions with staff and other residents, we take care to make the transition feel natural and respectful.
+
+    **We’re Here for Families Too**
+
+    Transitioning to an adult family home is a journey. That’s why we also provide guidance, check-ins, and emotional support to family members throughout the process.
+
+    Let us help your loved one start this next chapter with comfort, dignity, and compassion.
+  `
+},
+"7": {
+  title: "Staying Active at Any Age: Light Exercises for Seniors",
+  image: blog7Image,
+  date: "July 15, 2025",
+  content: `
+    Physical activity plays a vital role in healthy aging. At Comfort Crest, we encourage seniors to stay active through safe, light exercises that improve physical health, mental well-being, and overall quality of life.
+
+    **Why Staying Active Matters**
+
+    Regular movement—even gentle activity—has powerful benefits for older adults:
+
+    - Improves balance and reduces fall risk  
+    - Strengthens muscles and joints  
+    - Boosts mood and reduces symptoms of depression  
+    - Enhances cardiovascular health  
+    - Supports better sleep and cognitive function  
+
+    **Simple Exercises for Daily Wellness**
+
+    At Comfort Crest, we integrate easy, low-impact exercises into daily routines, such as:
+
+    - **Seated stretches** to increase flexibility  
+    - **Chair yoga** for gentle movement and relaxation  
+    - **Walking** in our garden or hallway loops  
+    - **Light resistance band exercises** to build strength  
+    - **Breathing and posture routines** to promote calm and focus  
+
+    **Making Movement Fun**
+
+    We also keep things social and enjoyable by offering:
+
+    - Group movement sessions  
+    - Music and dance therapy  
+    - Gentle games like balloon toss and bowling  
+
+    **Personalized for Each Resident**
+
+    Our caregivers tailor activity plans based on each resident's ability, comfort level, and medical needs. We ensure every senior has the opportunity to move safely and joyfully—at their own pace.
+
+    **A Lifestyle That Encourages Vitality**
+
+    Staying active isn’t just about physical fitness—it’s about maintaining independence, confidence, and a vibrant outlook on life. At Comfort Crest, we make wellness a part of every day.
+
+    Let us help your loved one stay active, happy, and strong—at any age.
+  `
+},
+"8": {
+  title: "What’s on the Menu: Healthy Meals for Seniors",
+  image: blog8Image,
+  date: "August 1, 2025",
+  content: `
+    Nutrition plays a vital role in maintaining strength, energy, and overall health—especially for older adults. At Comfort Crest, we prioritize wholesome, well-balanced meals that support both physical health and emotional comfort.
+
+    **Fresh Ingredients, Thoughtful Choices**
+
+    Our meals are made with fresh, locally sourced ingredients whenever possible. We take into account dietary needs, preferences, allergies, and medical considerations to create menus that are both nutritious and satisfying.
+
+    **Sample Meal Highlights:**
+    - **Breakfast:** Oatmeal with fresh fruit, whole grain toast, and herbal tea
+    - **Lunch:** Grilled chicken, steamed vegetables, and brown rice
+    - **Dinner:** Baked salmon, sweet potatoes, and green beans
+    - **Snacks:** Greek yogurt, nuts, or a smoothie
+
+    **Specialized Nutrition Support**
+
+    For residents with specific health needs—such as diabetes, hypertension, or swallowing difficulties—we provide tailored meal options guided by professional dietary advice.
+
+    **Mealtimes That Feel Like Home**
+
+    Beyond nutrition, we strive to make meals a social and comforting experience. Shared dining spaces, familiar dishes, and a calm atmosphere contribute to a sense of community and well-being.
+
+    At Comfort Crest, we believe food is more than fuel—it’s part of living well every day.
+  `
+}
+
+
+
+
+
+
 };
 
 const BlogPost = () => {

@@ -36,7 +36,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="/lovable-uploads/2f619d33-dd96-4fb0-8e5d-b63ab8361c71.png"
+              src="/pics/logo2.png"
               alt="Comfort Crest Adult Family Home"
               className="h-12 w-auto"
             />

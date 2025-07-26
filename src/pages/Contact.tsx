@@ -9,6 +9,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import heroImage from "/pics/contact1.jpg";
+import emailjs from "@emailjs/browser"; // 🆕 import EmailJS
 
 const Contact = () => {
   const { toast } = useToast();
@@ -22,16 +23,42 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We'll get back to you within 24 hours.",
-    });
-    setFormData({
-      name: "",
-      careRecipientName: "",
-      phone: "",
-      moveInDate: "",
-      message: ""
+
+    const templateParams = {
+      from_name: formData.name,
+      care_recipient: formData.careRecipientName,
+      phone: formData.phone,
+      move_in_date: formData.moveInDate,
+      message: formData.message,
+    };
+
+    emailjs.send(
+      "Edwin",     // 🔁 Replace with your EmailJS service ID
+      "template_26auuga",    // 🔁 Replace with your EmailJS template ID
+      templateParams,
+      "f2fJ4mDgiBPpGLNrZ"      // 🔁 Replace with your EmailJS public key
+    )
+    .then(() => {
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for contacting us. We'll get back to you within 24 hours.",
+      });
+
+      setFormData({
+        name: "",
+        careRecipientName: "",
+        phone: "",
+        moveInDate: "",
+        message: ""
+      });
+    })
+    .catch((error) => {
+      console.error("EmailJS Error:", error);
+      toast({
+        title: "Error Sending Message",
+        description: "There was a problem sending your message. Please try again later.",
+        variant: "destructive",
+      });
     });
   };
 
@@ -242,15 +269,27 @@ const Contact = () => {
             Contact us today to learn more about our services and availability.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center fade-in-up delay-400">
-            <Button variant="outline" className="border-white text-[#f6d170] hover:bg-white hover:text-primary font-semibold px-8 py-3">
+          <a href="tel:+12019207621">
+            <Button
+              variant="outline"
+              className="border-white text-[#f6d170] hover:bg-white hover:text-primary font-semibold px-8 py-3"
+            >
               <Phone className="mr-2 h-4 w-4" />
               Call (201) 920-7621
             </Button>
-            <Button variant="outline" className="border-white text-[#f6d170] hover:bg-white hover:text-primary font-semibold px-8 py-3">
+          </a>
+
+          <a href="mailto:info@comfortcrest.com">
+            <Button
+              variant="outline"
+              className="border-white text-[#f6d170] hover:bg-white hover:text-primary font-semibold px-8 py-3"
+            >
               <Mail className="mr-2 h-4 w-4" />
               Send Email
             </Button>
-          </div>
+          </a>
+        </div>
+
         </div>
       </section>
     </Layout>
