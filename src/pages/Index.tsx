@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Heart, Home, Users, Shield } from "lucide-react";
 import heroImage from "/pics/outside5.jpg";
-import livingRoomImage from "/pics/outside2.jpg";
+
 import personalCareImage from "/pics/elderly1.jpg";
 
 const Index = () => {
