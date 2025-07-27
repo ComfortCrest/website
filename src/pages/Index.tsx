@@ -51,12 +51,16 @@ const Index = () => {
             </div>
             <div className="fade-in-right">
               
-              <video
-                  controls
-                  className="rounded-lg shadow-elegant w-full">
-                  <source src="/pics/video1.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-              </video>
+            <iframe
+              className="rounded-lg shadow-elegant w-full h-96 md:h-[500px]"
+              src="https://www.youtube-nocookie.com/embed/HIePEzOf0kY"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen>
+              
+            </iframe>
+
             </div>
           </div>
         </div>

@@ -54,10 +54,20 @@ const OurHome = () => {
     {src: "/pics/kitchen6.jpg", alt: "Table with chairs set near door with outside view", title: "Cozy Dining Corner" },    
   ];
   const videoItems = [
-  {
-    src: "/pics/video2.mp4",poster: "/pics/kitchen4.jpg",title: "Facility Tour – Lounge Area",description: "A quick look into our cozy lounge and community space."},
-    {src: "/pics/video3.mp4",poster: "/pics/outside3.jpg",title: "Walkthrough",description: "Garden Area."}
-];
+    {
+      src: "https://www.youtube-nocookie.com/embed/qGXovtiENic",
+      poster: "/pics/kitchen4.jpg",
+      title: "Facility Tour – Lounge Area",
+      description: "A quick look into our cozy lounge and community space."
+    },
+    {
+      src: "https://www.youtube-nocookie.com/embed/qGXovtiENic",
+      poster: "/pics/outside3.jpg",
+      title: "Walkthrough",
+      description: "Garden Area."
+    }
+  ];
+
 
 
   return (
@@ -226,12 +236,14 @@ const OurHome = () => {
                 {videoItems.map((video, index) => (
                   <CarouselItem key={index}>
                     <div className="relative">
-                      <video
+                      <iframe
                         src={video.src}
-                        poster={video.poster}
-                        controls
+                        title={video.title}
                         className="w-full h-96 md:h-[500px] object-cover rounded-lg shadow-elegant"
-                      />
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent rounded-b-lg">
                         <div className="p-6">
                           <h3 className="text-xl font-semibold text-white mb-2">{video.title}</h3>
@@ -245,10 +257,7 @@ const OurHome = () => {
               <CarouselPrevious className="left-4" />
               <CarouselNext className="right-4" />
             </Carousel>
-          </div>
-
-
-        
+          </div>      
 
         </div>
       </section>

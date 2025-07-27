@@ -16,6 +16,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     careRecipientName: "",
+     email: "",
     phone: "",
     moveInDate: "",
     message: ""
@@ -27,30 +28,41 @@ const Contact = () => {
     const templateParams = {
       from_name: formData.name,
       care_recipient: formData.careRecipientName,
+       from_email: formData.email,
       phone: formData.phone,
       move_in_date: formData.moveInDate,
       message: formData.message,
+      reply_to: formData.email,
     };
 
-    emailjs.send(
-      "Edwin",     // 🔁 Replace with your EmailJS service ID
-      "template_26auuga",    // 🔁 Replace with your EmailJS template ID
-      templateParams,
-      "f2fJ4mDgiBPpGLNrZ"      // 🔁 Replace with your EmailJS public key
-    )
-    .then(() => {
-      toast({
-        title: "Message Sent!",
-        description: "Thank you for contacting us. We'll get back to you within 24 hours.",
-      });
+    emailjs.send("comfort", "template_ket7u3l", templateParams, "B-7qhWEdtv3ZkMUBw")
+      .then(() => {
+      // Auto-reply to user
+        emailjs.send("comfort", "template_9mpp3ge", templateParams, "B-7qhWEdtv3ZkMUBw")
+          .then(() => {
+            toast({
+            title: "Message Sent!",
+            description: "Thank you for contacting us. We've sent you a confirmation email.",
+          });
 
-      setFormData({
-        name: "",
-        careRecipientName: "",
-        phone: "",
-        moveInDate: "",
-        message: ""
-      });
+          // Reset form
+          setFormData({
+            name: "",
+            email: "",
+            careRecipientName: "",
+            phone: "",
+            moveInDate: "",
+            message: ""
+          });
+        })
+        .catch((error) => {
+          console.error("Auto-reply Error:", error);
+          toast({
+            title: "Message Sent, but Auto-Reply Failed",
+            description: "We received your message, but couldn't send confirmation email.",
+            variant: "destructive",
+          });
+        });
     })
     .catch((error) => {
       console.error("EmailJS Error:", error);
@@ -103,7 +115,7 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-secondary mr-4 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Email</h3>
-                    <p className="text-muted-foreground">info@comfortcrest.com</p>
+                    <p className="text-muted-foreground">comfortcrestafh@gmail.com</p>
                   </div>
                 </div>
 
@@ -192,7 +204,18 @@ const Contact = () => {
                         className="mt-1"
                       />
                     </div>
-
+                    <div>
+                      <Label htmlFor="email">Email address *</Label>
+                      <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        className="mt-1"
+                      />
+                    </div>
                     <div>
                       <Label htmlFor="moveInDate">Estimated Move-in Date</Label>
                       <Input
@@ -279,7 +302,7 @@ const Contact = () => {
             </Button>
           </a>
 
-          <a href="mailto:info@comfortcrest.com">
+          <a href="mailto:comfortcrestafh@gmail.com">
             <Button
               variant="outline"
               className="border-white text-[#f6d170] hover:bg-white hover:text-primary font-semibold px-8 py-3"
