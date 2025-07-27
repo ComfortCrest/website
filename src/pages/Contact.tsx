@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import heroImage from "/pics/contact1.jpg";
+import heroImage from "/pics/contact1.webp";
 import emailjs from "@emailjs/browser"; // 🆕 import EmailJS
 
 const Contact = () => {
@@ -85,6 +85,7 @@ const Contact = () => {
     <Layout>
       <HeroBanner
         backgroundImage={heroImage}
+        backgroundImage2x="/images/contact2@2x.webp"
         title="Contact Us"
         subtitle="Ready to learn more? We're here to answer your questions and schedule your visit"
         height="medium"

@@ -3,7 +3,7 @@ import HeroBanner from "@/components/HeroBanner";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import heroImage from "/pics/outside8.jpg";
+import heroImage from "/pics/outside8.webp";
 import livingRoomImage from "/pics/living2.jpg";
 import provider from "/pics/provider.jpg";
 
@@ -12,6 +12,7 @@ const About = () => {
     <Layout>
       <HeroBanner
         backgroundImage={heroImage}
+        backgroundImage2x="/images/outside8@2x.webp"
         title="About Comfort Crest"
         subtitle="Creating a beautiful, comfortable home environment where dignity meets professional care"
       >

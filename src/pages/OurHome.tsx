@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Link } from "react-router-dom";
-import heroImage from "/pics/outside1.jpg";
+import heroImage from "/pics/outside1.webp";
 import lakeImage from "/pics/lake.jpg";
 
 const OurHome = () => {
@@ -74,6 +74,7 @@ const OurHome = () => {
     <Layout>
       <HeroBanner
         backgroundImage={heroImage}
+        backgroundImage2x="/images/outside1@2x.webp"
         title="Our Beautiful Home"
         subtitle="A warm, welcoming environment designed for comfort, safety, and quality of life"
       >

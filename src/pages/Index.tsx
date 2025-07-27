@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Heart, Home, Users, Shield } from "lucide-react";
-import heroImage from "/pics/outside5.jpg";
+import heroImage from "/pics/outside5.webp";
 
 import personalCareImage from "/pics/elderly1.jpg";
 
@@ -13,6 +13,7 @@ const Index = () => {
     <Layout> 
       <HeroBanner
         backgroundImage={heroImage}
+        backgroundImage2x="/images/outside5@2x.webp"
         title="Welcome to Comfort Crest"
         subtitle="Professional adult family home providing compassionate care in a beautiful, comfortable environment"
         height="full"

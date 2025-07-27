@@ -1,19 +1,23 @@
 import { ReactNode } from "react";
 
 interface HeroBannerProps {
-  backgroundImage: string;
+  backgroundImage: string;           // 1x image
+  backgroundImage2x?: string;        // 2x image for retina
   title: string;
   subtitle?: string;
   children?: ReactNode;
   height?: "full" | "large" | "medium";
+  lazy?: boolean;                    // optional lazy toggle
 }
 
-const HeroBanner = ({ 
-  backgroundImage, 
-  title, 
-  subtitle, 
-  children, 
-  height = "large" 
+const HeroBanner = ({
+  backgroundImage,
+  backgroundImage2x,
+  title,
+  subtitle,
+  children,
+  height = "large",
+  lazy = true,
 }: HeroBannerProps) => {
   const heightClasses = {
     full: "h-screen",
@@ -22,21 +26,24 @@ const HeroBanner = ({
   };
 
   return (
-    <section 
-      className={`relative ${heightClasses[height]} flex items-center justify-center overflow-hidden`}
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}
-    >
+    <section className={`relative ${heightClasses[height]} flex items-center justify-center overflow-hidden`}>
+      
+      {/* Responsive Lazy Image */}
+      <img
+        src={backgroundImage}
+        srcSet={backgroundImage2x ? `${backgroundImage2x} 2x` : undefined}
+        alt="Hero Background"
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        loading={lazy ? "lazy" : "eager"}
+        fetchPriority={lazy ? "auto" : "high"}
+        decoding="async"
+      />
+
       {/* Overlay */}
-      {/* <div className="absolute inset-0 hero-overlay"></div> */}
-      
-      
+      <div className="absolute inset-0 bg-black/40 z-10" />
+
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+      <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 fade-in-up font-poppins">
           {title}
         </h1>
@@ -51,9 +58,9 @@ const HeroBanner = ({
           </div>
         )}
       </div>
-      
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce z-20">
         <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
         </div>

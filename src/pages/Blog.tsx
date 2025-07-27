@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import HeroBanner from "@/components/HeroBanner";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import heroImage from "/pics/blog.jpg";
+import heroImage from "/pics/blog.webp";
 import blog1Image from "@/assets/blog-1.jpg";
 import blog2Image from "@/assets/blog-2.jpg";
 import blog3Image from "@/assets/blog-3.jpg";
@@ -76,6 +76,7 @@ const Blog = () => {
     <Layout>
       <HeroBanner
         backgroundImage={heroImage}
+        backgroundImage2x="/images/blog@2x.webp"
         title="Our Blog"
         subtitle="Stories, insights, and updates from Comfort Crest Adult Family Home"
       />
