@@ -9,34 +9,31 @@ import lakeImage from "/pics/lake.jpg";
 
 const OurHome = () => {
   const homeImages = [
-    { src: "/pics/living2.jpg", alt: "Comfortable living room", title: "Living Area" },
+    { src: "/pics/living2.jpg", alt: "Comfortable Living room", title: "Living Area" },
     { src: "/pics/living4.jpg", alt: "View from Living Area", title: "Outside View" },
-    { src: "/pics/living5.jpg", alt: "Home interior", title: "Living Area" },
-    { src: "/pics/living6.jpg", alt: "Home Interior", title: "Comfortable Couches" },
-    { src: "/pics/living7.jpg", alt: "Comfortable living room", title: "Private Rooms" },
+    { src: "/pics/living5.jpg", alt: "Comfortable Seating and Mounted TV", title: "Living Area" },
+    { src: "/pics/living6.jpg", alt: "", title: "Elegant Dinner Table Setup" },
+    { src: "/pics/living7.jpg", alt: "", title: "Stylish dinner table with place settings and comfortable sofas" },
     { src: "/pics/living9.jpg", alt: "The Single-Seat Sanctuary", title: "One-seat couches" }
   ];
   const bedroomImages = [
     { src: "/pics/bedroom1.jpg", alt: "Soft bed with warm lighting", title: "Cozy Bedroom" },
     { src: "/pics/bedroom2.jpg", alt: "View from Bedroom Area", title: "Modern Bedroom Interior" },
     { src: "/pics/bedroom3.jpg", alt: "Sleek bed in bright room.", title: "Comfortable Bedroom" },
-    { src: "/pics/bedroom4.jpg", alt: "Bed and vintage decor.", title: "Rustic Bedroom" },
+    { src: "/pics/bedroom4.jpg", alt: "Movable Bed and Wooden Cupboard.", title: " Bedroom" },
     { src: "/pics/bedroom6.jpg", alt: "Comfortable bedroom", title: "Clean bed setup" },
+    {src: "/pics/bedroom7.jpg", alt: "Cozy bedroom.", title: "Bedroom Interior" },
     { src: "/pics/bedroom5.jpg", alt: "A cozy room with a study desk by the window, warm lighting, and a comfortable chair.", title: "Bright Study Room Interior" },
-    {src: "/pics/bedroom7.jpg", alt: "Cozy bedroom.", title: "Bedroom Interior" },    
+        
   ];
   const bathroomImages = [
-    { src: "/pics/bathroom1.jpg", alt: "Sleek sink and glass shower with clean lines.", title: "Modern Bathroom" },
-    { src: "/pics/bathroom2.jpg", alt: "Simple bathroom with white tiles and floating vanity.", title: "Minimalist Bathroom Design" },
-    { src: "/pics/bathroom3.jpg", alt: "Soft lighting Bathroom", title: "Luxury Spa Bathroom" },
-    { src: "/pics/bathroom4.jpg", alt: "Wood accents and stone sink with natural tones.", title: "Rustic Bathroom Interior" },
-    { src: "/pics/bathroom5.jpg", alt: " All-white bathroom with mirror and bright light.", title: "Bright White Bathroom" },
-    { src: "/pics/bathroom6.jpg", alt: "Bathroom with large window and natural light.", title: "Bright Bathroom" },
-    {src: "/pics/bathroom7.jpg", alt: "Wall mirror above a sink with built-in drawers.", title: "Bathroom Vanity Setup" },
-       
+    { src: "/pics/bathroom1.jpg", alt: "Space-efficient bathroom design with a walk-in shower and standard toilet, accented by neutral tiles", title: "Compact Bathroom with Walk-In Shower and Toilet" },
+    { src: "/pics/bathroom2.jpg", alt: "Simple bathroom with grey tiles", title: "Minimalist Bathroom Design" },
+    { src: "/pics/bathroom3.jpg", alt: "Soft lighting Bathroom", title: "Bathroom" },
+      
   ];
   const outsideImages = [
-    { src: "/pics/outside1.jpg", alt: "Green lawn with plants and flowers.", title: "Garden Area" },
+    { src: "/pics/outside1.webp", alt: "Green lawn with plants and flowers.", title: "Garden Area" },
     { src: "/pics/outside2.jpg", alt: "Front Patio", title: "Entrance" },
     { src: "/pics/outside3.jpg", alt: "Designated Outdoor Parking", title: "Parking Area" },
     { src: "/pics/outside4.jpg", alt: "Patio chairs and table", title: "Outdoor Seating" },
