@@ -12,6 +12,9 @@ export default {
 		// Height & layout
 		"min-h-[75dvh]",
 		"h-[50vh]",
+		"min-h-[100dvh]",
+		"mt-8",
+		"md:mt-12",
 		"h-[40vh]",
 		"pt-24",
 		"pt-20",
@@ -76,7 +79,7 @@ export default {
 
 		// Overlay
 		"bg-black/40",
-		],
+	],
 
     
 
