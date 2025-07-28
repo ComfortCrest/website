@@ -22,9 +22,9 @@ const HeroBanner = ({
   lazy = true,
 }: HeroBannerProps) => {
   const heightClasses = {
-    full: "min-h-[75dvh] pt-24", // increased height with padding for fixed navbar
-    large: "h-[50vh] pt-24",
-    medium: "h-[40vh] pt-20",
+    full: "min-h-[100dvh] pt-24", // increased height with padding for fixed navbar
+    large: "h-[80vh] pt-24",
+    medium: "h-[50vh] pt-20",
   };
 
   return (
