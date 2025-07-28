@@ -297,7 +297,7 @@ const Contact = () => {
           <a href="tel:+12019207621">
             <Button
               variant="outline"
-              className="border-white text-[#f2d469] hover:bg-white hover:text-primary font-semibold px-8 py-3"
+              className="border-white text-[#f2d469] hover:bg-red hover:text-[#f2d469] font-semibold px-8 py-3"
             >
               <Phone className="mr-2 h-4 w-4" />
               Call (201) 920-7621
@@ -307,7 +307,7 @@ const Contact = () => {
           <a href="mailto:comfortcrestafh@gmail.com">
             <Button
               variant="outline"
-              className="border-white text-[#f2d469] hover:bg-white hover:text-primary font-semibold px-8 py-3"
+              className="border-white text-[#f2d469] hover:bg-red hover:text-[#f2d469] font-semibold px-8 py-3"
             >
               <Mail className="mr-2 h-4 w-4" />
               Send Email
