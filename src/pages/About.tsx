@@ -103,7 +103,7 @@ const About = () => {
               professional care in a beautiful home environment that promotes dignity, 
               independence, and well-being.
             </p>
-            <Button asChild variant="outline" className="border-white text-[#f2d469] hover:bg-white hover:text-[#FF0000]">
+            <Button asChild variant="outline" className="border-white text-primaryYellow hover:bg-white hover:text-primaryRed">
               <Link to="/contact">Join Our Family</Link>
             </Button>
           </div>

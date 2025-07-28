@@ -8,6 +8,78 @@ export default {
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
 	],
+	safelist: [
+		// Height & layout
+		"min-h-[75dvh]",
+		"h-[50vh]",
+		"h-[40vh]",
+		"pt-24",
+		"pt-20",
+		"flex",
+		"items-center",
+		"justify-center",
+		"overflow-hidden",
+		"relative",
+		"absolute",
+		"inset-0",
+		"w-full",
+		"h-full",
+		"z-0",
+		"z-10",
+		"z-20",
+		"text-center",
+		"text-white",
+		"px-4",
+		"max-w-4xl",
+		"mx-auto",
+
+		// Typography
+		"text-4xl",
+		"md:text-6xl",
+		"font-bold",
+		"mb-6",
+		"font-poppins",
+		"text-xl",
+		"md:text-2xl",
+		"mb-8",
+		"font-inter",
+		"leading-relaxed",
+
+		// Animations
+		"fade-in-up",
+		"delay-200",
+		"delay-400",
+		"animate-bounce",
+		"animate-pulse",
+
+		// Scroll indicator
+		"bottom-8",
+		"left-1/2",
+		"-translate-x-1/2",
+		"transform",
+		"w-6",
+		"h-10",
+		"border-2",
+		"border-white/50",
+		"rounded-full",
+		"justify-center",
+		"w-1",
+		"h-3",
+		"bg-white/50",
+		"mt-2",
+
+		// Object-fit & interactivity
+		"object-cover",
+		"object-center",
+		"select-none",
+		"pointer-events-none",
+
+		// Overlay
+		"bg-black/40",
+		],
+
+    
+
 	prefix: "",
 	theme: {
 		container: {
@@ -29,6 +101,8 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				primaryYellow: "#f2d469",
+				primaryRed:"#ff0000",
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'

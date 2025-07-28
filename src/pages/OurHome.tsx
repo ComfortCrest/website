@@ -446,7 +446,7 @@ const OurHome = () => {
             We invite you to visit our beautiful home and see firsthand the 
             comfortable, caring environment we've created for our residents.
           </p>
-          <Button asChild variant="outline" className="border-white text-[#f2d469] hover:bg-white hover:text-[#FF0000] font-semibold px-8 py-3 fade-in-up delay-400">
+          <Button asChild variant="outline" className="border-white text-primaryYellow hover:bg-white hover:text-primaryRed font-semibold px-8 py-3 fade-in-up delay-400">
             <Link to="/contact">Schedule Your Visit Today</Link>
           </Button>
         </div>
