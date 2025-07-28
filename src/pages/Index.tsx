@@ -26,7 +26,7 @@ const Index = () => {
           <Button
             asChild
             variant="outline"
-            className="border-white text-[#f2d469] hover:bg-white hover:text-[#f2d469] font-semibold px-8 py-3"
+            className="border-white text-[#f2d469] hover:bg-white hover:text-[#FF0000] font-bold px-8 py-3"
           >
             <Link to="/services" className="text-[#f2d469] hover:text-[#f2d469]">
               Learn More
@@ -210,7 +210,7 @@ const Index = () => {
           </div>
 
           <div className="text-center fade-in-up delay-800">
-            <Button asChild variant="outline" className="border-white text-[#f2d469] hover:bg-white hover:text-[#f2d469] font-semibold px-8 py-3">
+            <Button asChild variant="outline" className="border-white text-[#f2d469] hover:bg-white hover:text-[#FF0000] font-bold px-8 py-3">
               <Link to="/services">View All Services</Link>
             </Button>
           </div>
