@@ -157,7 +157,7 @@ const Services = () => {
                 Our approach is holistic, considering not just physical health but 
                 emotional, social, and spiritual well-being as well.
               </p>
-              <Button asChild variant="outline" className="border-white text-[#f6d170] hover:bg-white hover:text-primary">
+              <Button asChild variant="outline" className="border-white text-[#f2d469] hover:bg-white hover:text-primary">
                 <Link to="/about">Learn More About Us</Link>
               </Button>
             </div>

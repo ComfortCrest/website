@@ -23,7 +23,7 @@ const Index = () => {
           <Button asChild className="btn-secondary font-semibold px-8 py-3">
             <Link to="/contact">Schedule a Visit</Link>
           </Button>
-          <Button asChild variant="outline" className="border-white text-[#f6d170] hover:bg-white hover:text-primary font-semibold px-8 py-3">
+          <Button asChild variant="outline" className="border-white text-[#f2d469] hover:bg-white hover:text-primary font-semibold px-8 py-3">
             <Link to="/services">Learn More</Link>
           </Button>
         </div>
@@ -203,7 +203,7 @@ const Index = () => {
           </div>
 
           <div className="text-center fade-in-up delay-800">
-            <Button asChild variant="outline" className="border-white text-[#f6d170] hover:bg-white hover:text-primary font-semibold px-8 py-3">
+            <Button asChild variant="outline" className="border-white text-[#f2d469] hover:bg-white hover:text-primary font-semibold px-8 py-3">
               <Link to="/services">View All Services</Link>
             </Button>
           </div>
