@@ -22,9 +22,9 @@ const HeroBanner = ({
   lazy = true,
 }: HeroBannerProps) => {
   const heightClasses = {
-    full: "min-h-[100dvh]", // full viewport height
-    large: "h-[80vh]",
-    medium: "h-[50vh]",
+    full: "min-h-[75dvh]", // full viewport height
+    large: "h-[50vh]",
+    medium: "h-[30vh]",
   };
 
   return (
