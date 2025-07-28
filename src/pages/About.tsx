@@ -12,7 +12,8 @@ const About = () => {
     <Layout>
       <HeroBanner
         backgroundImage={heroImage}
-        backgroundImage2x="/images/outside8@2x.webp"
+        backgroundImage2x="/pics/outside8@2x.webp"
+        backgroundImageMobile="/pics/outside8.webp"
         title="About Comfort Crest"
         subtitle="Creating a beautiful, comfortable home environment where dignity meets professional care"
       >

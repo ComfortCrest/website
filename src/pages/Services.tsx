@@ -13,8 +13,8 @@ import {
   Clock, 
   Brain 
 } from "lucide-react";
-import heroImage from "/pics/elderly2.jpg";
-import personalCareImage from "/pics/elderly4.webp";
+import heroImage from "/pics/elderly2.webp";
+import personalCareImage from "/pics/elderly4.jpg";
 
 const Services = () => {
   const services = [
@@ -64,7 +64,8 @@ const Services = () => {
     <Layout>
       <HeroBanner
         backgroundImage={heroImage}
-        backgroundImage2x="/images/elderly4@2x.webp"
+        backgroundImage2x="/pics/elderly2@2x.webp"
+        backgroundImageMobile="/pics/elderly2.webp"
         title="Our Services"
         subtitle="Comprehensive care tailored to your individual needs and preferences"
       >

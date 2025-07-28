@@ -13,7 +13,8 @@ const Index = () => {
     <Layout> 
       <HeroBanner
         backgroundImage={heroImage}
-        backgroundImage2x="/images/outside5@2x.webp"
+        backgroundImage2x="/pics/outside5@2x.webp"
+        backgroundImageMobile="/pics/outside5.webp"
         title="Welcome to Comfort Crest"
         subtitle="Professional adult family home providing compassionate care in a beautiful, comfortable environment"
         height="full"

@@ -74,7 +74,8 @@ const OurHome = () => {
     <Layout>
       <HeroBanner
         backgroundImage={heroImage}
-        backgroundImage2x="/images/outside1@2x.webp"
+        backgroundImage2x="/pics/outside1@2x.webp"
+        backgroundImageMobile="/pics/outside1.webp"
         title="Our Beautiful Home"
         subtitle="A warm, welcoming environment designed for comfort, safety, and quality of life"
       >

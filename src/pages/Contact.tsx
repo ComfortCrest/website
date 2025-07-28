@@ -85,7 +85,8 @@ const Contact = () => {
     <Layout>
       <HeroBanner
         backgroundImage={heroImage}
-        backgroundImage2x="/images/contact2@2x.webp"
+        backgroundImage2x="/pics/contact1@2x.webp"
+        backgroundImageMobile="/pics/contact1.webp"
         title="Contact Us"
         subtitle="Ready to learn more? We're here to answer your questions and schedule your visit"
         height="medium"

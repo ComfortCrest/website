@@ -76,7 +76,8 @@ const Blog = () => {
     <Layout>
       <HeroBanner
         backgroundImage={heroImage}
-        backgroundImage2x="/images/blog@2x.webp"
+        backgroundImage2x="/pics/blog@2x.webp"
+        backgroundImageMobile="/pics/blog.webp"
         title="Our Blog"
         subtitle="Stories, insights, and updates from Comfort Crest Adult Family Home"
       />

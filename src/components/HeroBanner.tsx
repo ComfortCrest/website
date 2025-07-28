@@ -1,18 +1,20 @@
 import { ReactNode } from "react";
 
 interface HeroBannerProps {
-  backgroundImage: string;           // 1x image
-  backgroundImage2x?: string;        // 2x image for retina
+  backgroundImage: string;           // 1x base image for tablet/laptop
+  backgroundImage2x?: string;        // 2x high-res image for large screens
+  backgroundImageMobile?: string;    // mobile-specific image
   title: string;
   subtitle?: string;
   children?: ReactNode;
   height?: "full" | "large" | "medium";
-  lazy?: boolean;                    // optional lazy toggle
+  lazy?: boolean;
 }
 
 const HeroBanner = ({
   backgroundImage,
   backgroundImage2x,
+  backgroundImageMobile,
   title,
   subtitle,
   children,
@@ -22,27 +24,51 @@ const HeroBanner = ({
   const heightClasses = {
     full: "h-screen",
     large: "h-[70vh]",
-    medium: "h-[50vh]"
+    medium: "h-[50vh]",
   };
 
   return (
     <section className={`relative ${heightClasses[height]} flex items-center justify-center overflow-hidden`}>
-      
-      {/* Responsive Lazy Image */}
-      <img
-        src={backgroundImage}
-        srcSet={backgroundImage2x ? `${backgroundImage2x} 2x` : undefined}
-        alt="Hero Background"
-        className="absolute inset-0 w-full h-full object-cover z-0"
-        loading={lazy ? "lazy" : "eager"}
-        fetchPriority={lazy ? "auto" : "high"}
-        decoding="async"
-      />
+      <picture>
+        {/* High-res desktop ≥1280px */}
+        {backgroundImage2x && (
+          <source
+            media="(min-width: 1281px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1281px) and (min-resolution: 192dpi)"
+            srcSet={backgroundImage2x}
+            type="image/webp"
+          />
+        )}
+
+        {/* Mid-size screens: tablets/laptops (768px–1279px) */}
+        <source
+          media="(min-width: 768px)"
+          srcSet={backgroundImage}
+          type="image/webp"
+        />
+
+        {/* Mobile screens: <=767px */}
+        {backgroundImageMobile && (
+          <source
+            media="(max-width: 767px)"
+            srcSet={backgroundImageMobile}
+            type="image/webp"
+          />
+        )}
+
+        {/* Fallback */}
+        <img
+          src={backgroundImage}
+          alt="Hero Background"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          loading={lazy ? "lazy" : "eager"}
+          decoding="async"
+        />
+      </picture>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 z-10" />
 
-      {/* Content */}
+      {/* Text */}
       <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 fade-in-up font-poppins">
           {title}
@@ -52,11 +78,7 @@ const HeroBanner = ({
             {subtitle}
           </p>
         )}
-        {children && (
-          <div className="fade-in-up delay-400">
-            {children}
-          </div>
-        )}
+        {children && <div className="fade-in-up delay-400">{children}</div>}
       </div>
 
       {/* Scroll Indicator */}
