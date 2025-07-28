@@ -23,11 +23,18 @@ const Index = () => {
           <Button asChild className="btn-secondary font-semibold px-8 py-3">
             <Link to="/contact">Schedule a Visit</Link>
           </Button>
-          <Button asChild variant="outline" className="border-white text-[#f2d469] hover:bg-white hover:text-[#f2d469] font-semibold px-8 py-3">
-            <Link to="/services">Learn More</Link>
+          <Button
+            asChild
+            variant="outline"
+            className="border-white text-[#f2d469] hover:bg-white hover:text-[#f2d469] font-semibold px-8 py-3"
+          >
+            <Link to="/services" className="text-[#f2d469] hover:text-[#f2d469]">
+              Learn More
+            </Link>
           </Button>
         </div>
       </HeroBanner>
+
 
       {/* What is an Adult Family Home */}
       <section className="py-20 bg-background">
