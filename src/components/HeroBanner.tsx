@@ -1,13 +1,13 @@
 import { ReactNode } from "react";
 
 interface HeroBannerProps {
-  backgroundImage: string;           // Base image for tablet/laptop
-  backgroundImage2x?: string;        // High-res image for desktop
-  backgroundImageMobile?: string;    // Mobile-specific image
+  backgroundImage: string;
+  backgroundImage2x?: string;
+  backgroundImageMobile?: string;
   title: string;
   subtitle?: string;
   children?: ReactNode;
-  height?: "full" | "large" | "medium"; // Controls section height
+  height?: "full" | "xlarge" | "large" | "medium";
   lazy?: boolean;
 }
 
@@ -18,20 +18,21 @@ const HeroBanner = ({
   title,
   subtitle,
   children,
-  height = "large",
+  height = "xlarge",
   lazy = true,
 }: HeroBannerProps) => {
   const heightClasses = {
-    full: "min-h-[100dvh]", // Full viewport height, safe on mobile
+    full: "min-h-[100dvh]",
+    xlarge: "min-h-[90vh]",
     large: "h-[70vh]",
     medium: "h-[50vh]",
   };
 
   return (
     <section
-      className={`relative ${heightClasses[height]} flex items-center justify-center overflow-hidden`}
+      className={`relative ${heightClasses[height]} flex items-center justify-center overflow-hidden pt-20`}
     >
-      {/* Background image (responsive) */}
+      {/* Background Image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <picture>
           {backgroundImage2x && (
@@ -63,10 +64,10 @@ const HeroBanner = ({
         </picture>
       </div>
 
-      {/* Dark overlay for text readability */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 z-10" />
 
-      {/* Text content */}
+      {/* Text Content */}
       <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 fade-in-up font-poppins">
           {title}
@@ -79,10 +80,10 @@ const HeroBanner = ({
         {children && <div className="fade-in-up delay-400">{children}</div>}
       </div>
 
-      {/* Scroll indicator */}
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce z-20">
         <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse" />
+          <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>
